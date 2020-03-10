@@ -130,11 +130,15 @@
                      .mash{
                        display: flex;
                      
-                 .search-del{
+                 #search-del{
                        input{
                          width: 300px;
                          margin-left:40px ;
+                         
                        }
+                    }
+                    .detect-btn{
+                        border-radius: 2px;
                     }
                     
                     }

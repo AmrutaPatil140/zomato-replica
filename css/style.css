@@ -89,9 +89,11 @@
       margin-left: 35px; }
     .game .widget .mash {
       display: flex; }
-      .game .widget .mash .search-del input {
+      .game .widget .mash #search-del input {
         width: 300px;
         margin-left: 40px; }
+      .game .widget .mash .detect-btn {
+        border-radius: 2px; }
   .game .order-btn input {
     margin-left: 40px;
     margin-top: 30px;

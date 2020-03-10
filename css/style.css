@@ -1,0 +1,178 @@
+@use './reset.scss';
+.h-container .right {
+  display: grid;
+  grid-template-columns: auto 120px 120px 120px;
+  grid-gap: 5px;
+  grid-template-areas: "app app1 app2 app3"; }
+.h-container .app {
+  grid-area: app; }
+.h-container .order {
+  grid-area: app1; }
+.h-container .table {
+  grid-area: app2; }
+.h-container .zoom {
+  grid-area: app3; }
+@media (max-width: 600px) {
+  .h-container .right {
+    grid-template-areas: " . . .   app1" " app . . app2" " .  . . app3"; }
+  .h-container .search-restaurant {
+    grid-template-areas: "mum . ." "rst . ." "srh . ."; } }
+.h-container li {
+  list-style: none; }
+  .h-container li img {
+    height: 20px;
+    width: 20px; }
+  .h-container li #img-1, .h-container li #img-2, .h-container li #img-3, .h-container li #img-4 {
+    float: left; }
+.h-container a {
+  text-decoration: none; }
+
+.sign {
+  background: url("../images/bg.jpg");
+  max-width: 100%;
+  background-size: cover;
+  height: auto; }
+  .sign .log {
+    display: flex;
+    justify-content: flex-end; }
+    .sign .log #sign_2 {
+      margin-left: 10px;
+      margin-right: 29px; }
+    .sign .log #sign_1, .sign .log #sign_2 {
+      color: white; }
+    .sign .log #sign_1:hover {
+      border: white 1px solid;
+      padding: 2px 2px 2px 2px; }
+    .sign .log #sign_2:hover {
+      border: white 1px solid;
+      padding: 2px 2px 2px 2px; }
+  .sign .search-restaurant {
+    display: block;
+    width: 100%; }
+    .sign .search-restaurant #search-city {
+      width: 150px;
+      margin-left: 33%;
+      margin-bottom: 20px;
+      padding: 2px; }
+    .sign .search-restaurant #search-rest {
+      width: 250px;
+      margin-bottom: 20px; }
+    .sign .search-restaurant #search-btn {
+      width: 100px;
+      margin-bottom: 20px;
+      background-color: red;
+      border: red 1px solid; }
+    @media screen and (max-width: 600px) {
+      .sign .search-restaurant #search-city, .sign .search-restaurant #search-rest, .sign .search-restaurant #search-btn {
+        width: 100%;
+        margin: 5px 0px 5px 5px; } }
+
+/*end of sign*/
+.game {
+  display: grid;
+  grid-template-columns: auto 500px;
+  grid-template-areas: "your wid"; }
+  .game .widget {
+    grid-area: wid;
+    margin-top: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-radius: 5px;
+    width: auto;
+    float: right;
+    height: auto;
+    background-color: whitesmoke; }
+    .game .widget h4 {
+      font-weight: bold;
+      font-size: 25px;
+      margin-left: 35px; }
+    .game .widget .search-del {
+      width: 305px;
+      margin-left: 35px; }
+    .game .widget .order-btn {
+      margin-left: 35px;
+      width: 380px;
+      color: white;
+      background-color: green;
+      border: green 1px solid;
+      border-radius: 5px; }
+    .game .widget input {
+      padding: 5px;
+      font-size: 15px; }
+    .game .widget hr {
+      margin: 20px; }
+    .game .widget .use {
+      display: block;
+      color: green;
+      font-size: 20px;
+      margin: 20px;
+      margin-bottom: 40px; }
+  .game .your-choise {
+    margin: 20px 20px 0 0;
+    height: auto;
+    grid-area: your; }
+    .game .your-choise .image {
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-template-columns: auto auto;
+      grid-gap: 5px;
+      grid-template-areas: "iga igb " "igc igd"; }
+      .game .your-choise .image .ig-1 {
+        grid-area: iga; }
+      .game .your-choise .image .ig-2 {
+        grid-area: igb; }
+      .game .your-choise .image .ig-3 {
+        grid-area: igc; }
+      .game .your-choise .image .ig-4 {
+        grid-area: igd; }
+    @media screen and (max-width: 600px) {
+      .game .your-choise .image {
+        grid-template-areas: "iga ." "igb ." "igc ." "igd ."; } }
+
+/*end of game*/
+@media screen and (max-width: 600px) {
+  .game {
+    grid-template-areas: "wid ." "your .";
+    margin-left: 20px; } }
+#cat-subtitle {
+  margin-left: 10px; }
+
+.category-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  flex-flow: wrap; }
+  .category-list li {
+    text-align: center; }
+
+#loc-subtitle {
+  margin-left: 20px; }
+
+.locality-list {
+  list-style: none; }
+
+footer {
+  background-color: black;
+  color: white;
+  margin: 40px; }
+  footer .foot {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+    margin-top: 30px; }
+    footer .foot li {
+      list-style: none; }
+  footer .cont {
+    list-style: none;
+    margin-left: 40px; }
+  footer .foot-last {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 0 30px; }
+    footer .foot-last li {
+      list-style: none;
+      margin: 0 5px; }
+
+/*# sourceMappingURL=style.css.map */

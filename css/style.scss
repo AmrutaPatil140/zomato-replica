@@ -127,17 +127,28 @@
                       font-size: 25px;
                        margin-left: 35px;
                      }
+                     .mash{
+                       display: flex;
+                     
                  .search-del{
-                       width:305px;
-                       margin-left: 35px;
+                       input{
+                         width: 300px;
+                         margin-left:40px ;
+                       }
                     }
+                    
+                    }
+                  }
                   .order-btn{
-                    margin-left: 35px;
+                    input{
+                    margin-left: 40px;
+                    margin-top: 30px;
                     width:380px;
                     color:white;
                     background-color: green;
                     border: green 1px solid;
                     border-radius: 5px;
+                    }
                    }
 
                     input{
@@ -196,8 +207,8 @@
                                        "igd .";
               }
             }
-           
-        }
+          
+        
       }/*end of game*/
       @media screen and(max-width: 600px){
         .game{

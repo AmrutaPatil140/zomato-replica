@@ -87,48 +87,52 @@
       font-weight: bold;
       font-size: 25px;
       margin-left: 35px; }
-    .game .widget .search-del {
-      width: 305px;
-      margin-left: 35px; }
-    .game .widget .order-btn {
-      margin-left: 35px;
-      width: 380px;
-      color: white;
-      background-color: green;
-      border: green 1px solid;
-      border-radius: 5px; }
-    .game .widget input {
-      padding: 5px;
-      font-size: 15px; }
-    .game .widget hr {
-      margin: 20px; }
-    .game .widget .use {
-      display: block;
-      color: green;
-      font-size: 20px;
-      margin: 20px;
-      margin-bottom: 40px; }
-  .game .your-choise {
-    margin: 20px 20px 0 0;
-    height: auto;
-    grid-area: your; }
-    .game .your-choise .image {
-      display: grid;
-      grid-template-rows: auto auto;
-      grid-template-columns: auto auto;
-      grid-gap: 5px;
-      grid-template-areas: "iga igb " "igc igd"; }
-      .game .your-choise .image .ig-1 {
-        grid-area: iga; }
-      .game .your-choise .image .ig-2 {
-        grid-area: igb; }
-      .game .your-choise .image .ig-3 {
-        grid-area: igc; }
-      .game .your-choise .image .ig-4 {
-        grid-area: igd; }
-    @media screen and (max-width: 600px) {
-      .game .your-choise .image {
-        grid-template-areas: "iga ." "igb ." "igc ." "igd ."; } }
+    .game .widget .mash {
+      display: flex; }
+      .game .widget .mash .search-del input {
+        width: 300px;
+        margin-left: 40px; }
+  .game .order-btn input {
+    margin-left: 40px;
+    margin-top: 30px;
+    width: 380px;
+    color: white;
+    background-color: green;
+    border: green 1px solid;
+    border-radius: 5px; }
+  .game input {
+    padding: 5px;
+    font-size: 15px; }
+  .game hr {
+    margin: 20px; }
+  .game .use {
+    display: block;
+    color: green;
+    font-size: 20px;
+    margin: 20px;
+    margin-bottom: 40px; }
+
+.your-choise {
+  margin: 20px 20px 0 0;
+  height: auto;
+  grid-area: your; }
+  .your-choise .image {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    grid-template-areas: "iga igb " "igc igd"; }
+    .your-choise .image .ig-1 {
+      grid-area: iga; }
+    .your-choise .image .ig-2 {
+      grid-area: igb; }
+    .your-choise .image .ig-3 {
+      grid-area: igc; }
+    .your-choise .image .ig-4 {
+      grid-area: igd; }
+  @media screen and (max-width: 600px) {
+    .your-choise .image {
+      grid-template-areas: "iga ." "igb ." "igc ." "igd ."; } }
 
 /*end of game*/
 @media screen and (max-width: 600px) {

@@ -27,11 +27,7 @@
                                      " app . . app2"
                                      " .  . . app3";
                     }
-              .search-restaurant{
-                      grid-template-areas: "mum . ."
-                                           "rst . ."
-                                           "srh . .";
-                    }
+              
             }
          
             li{ 
@@ -73,40 +69,59 @@
                     border: white 1px solid;
                     padding: 2px 2px 2px 2px;
                   }
+               } 
+               .banner{
+                 margin-left: 400px;
+               }
+               @media screen and (max-width: 600px){
+                 .banner{
+                   margin-left: 0;
+                 }
                }
                   .search-restaurant{
-                    display: block;
-                    width: 100%;
-                    
-                    
-                  
+                      width:100%;
+                      display: block;
+                   
                     #search-city{
-                      width: 150px;
-                      margin-left: 33%;
-                      margin-bottom: 20px;
+                   
+                     margin-bottom: 20px;
                       padding: 2px;
+                   
                     }
                     #search-rest{
-                      width: 250px;
-                      margin-bottom: 20px;
+                     margin-bottom: 20px;
+                     width: 500px;
                     }
                     #search-btn{
-                      width: 100px;
-                      margin-bottom: 20px;
+                     /* width: 100px;*/
+                     margin-bottom: 20px;
                       background-color: red;
                       border:red 1px solid; 
                     }
-                    @media screen and (max-width:600px){
-                      #search-city,#search-rest,#search-btn{
-                        width: 100%;
-                        margin:5px 0px 5px 5px;
-                      }
-              
-                    }
+                  }
+                 
 
-               }
-               
-         }/*end of sign*/
+                } /*end of sign*/
+                    
+                @media screen and (max-width:600px){
+                  #search-btn{
+                     width: 100%;
+                  
+                   }
+           
+                 }
+                 @media screen and (max-width:600px){
+                   #search-city{
+                     width: 100%;
+                     margin-left: 0;
+                   }
+                 }
+                 @media screen and (max-width:600px){
+                 #search-rest{
+                  width: 100%;
+                 }
+                }
+        
          .game{   
           display: grid;
           grid-template-columns: auto 500px;
@@ -130,7 +145,7 @@
                      .mash{
                        display: flex;
                      
-                 #search-del{
+                       #search-del{
                        input{
                          width: 300px;
                          margin-left:40px ;

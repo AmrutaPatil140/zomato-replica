@@ -14,9 +14,7 @@
   grid-area: app3; }
 @media (max-width: 600px) {
   .h-container .right {
-    grid-template-areas: " . . .   app1" " app . . app2" " .  . . app3"; }
-  .h-container .search-restaurant {
-    grid-template-areas: "mum . ." "rst . ." "srh . ."; } }
+    grid-template-areas: " . . .   app1" " app . . app2" " .  . . app3"; } }
 .h-container li {
   list-style: none; }
   .h-container li img {
@@ -46,28 +44,37 @@
     .sign .log #sign_2:hover {
       border: white 1px solid;
       padding: 2px 2px 2px 2px; }
+  .sign .banner {
+    margin-left: 400px; }
+  @media screen and (max-width: 600px) {
+    .sign .banner {
+      margin-left: 0; } }
   .sign .search-restaurant {
-    display: block;
-    width: 100%; }
+    width: 100%;
+    display: block; }
     .sign .search-restaurant #search-city {
-      width: 150px;
-      margin-left: 33%;
       margin-bottom: 20px;
       padding: 2px; }
     .sign .search-restaurant #search-rest {
-      width: 250px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      width: 500px; }
     .sign .search-restaurant #search-btn {
-      width: 100px;
+      /* width: 100px;*/
       margin-bottom: 20px;
       background-color: red;
       border: red 1px solid; }
-    @media screen and (max-width: 600px) {
-      .sign .search-restaurant #search-city, .sign .search-restaurant #search-rest, .sign .search-restaurant #search-btn {
-        width: 100%;
-        margin: 5px 0px 5px 5px; } }
 
 /*end of sign*/
+@media screen and (max-width: 600px) {
+  #search-btn {
+    width: 100%; } }
+@media screen and (max-width: 600px) {
+  #search-city {
+    width: 100%;
+    margin-left: 0; } }
+@media screen and (max-width: 600px) {
+  #search-rest {
+    width: 100%; } }
 .game {
   display: grid;
   grid-template-columns: auto 500px;

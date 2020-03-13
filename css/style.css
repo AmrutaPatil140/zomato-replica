@@ -1,28 +1,34 @@
 @use './reset.scss';
-.h-container .right {
+.right {
   display: grid;
   grid-template-columns: auto 120px 120px 120px;
   grid-gap: 5px;
   grid-template-areas: "app app1 app2 app3"; }
-.h-container .app {
+
+.app {
   grid-area: app; }
-.h-container .order {
+
+.order {
   grid-area: app1; }
-.h-container .table {
+
+.table {
   grid-area: app2; }
-.h-container .zoom {
+
+.zoom {
   grid-area: app3; }
+
 @media (max-width: 600px) {
-  .h-container .right {
+  .right {
     grid-template-areas: " . . .   app1" " app . . app2" " .  . . app3"; } }
-.h-container li {
+li {
   list-style: none; }
-  .h-container li img {
+  li img {
     height: 20px;
     width: 20px; }
-  .h-container li #img-1, .h-container li #img-2, .h-container li #img-3, .h-container li #img-4 {
+  li #img-1, li #img-2, li #img-3, li #img-4 {
     float: left; }
-.h-container a {
+
+a {
   text-decoration: none; }
 
 .sign {
@@ -157,6 +163,9 @@
   justify-content: space-between;
   list-style: none;
   flex-flow: wrap; }
+  .category-list img {
+    width: 40px;
+    height: 40px; }
   .category-list li {
     text-align: center; }
 

@@ -1,7 +1,7 @@
 @use './reset.scss';
 
 
-.h-container{
+
    
            .right{
                   display: grid;
@@ -44,7 +44,7 @@
              a{
                  text-decoration: none;
               }
-         }
+         
   .sign{
            background: url('../images/bg.jpg');
            max-width: 100%;
@@ -246,6 +246,10 @@
         justify-content: space-between;
         list-style: none;
         flex-flow: wrap;
+        img{
+          width: 40px;
+          height: 40px;
+        }
 
         li{
           text-align: center;

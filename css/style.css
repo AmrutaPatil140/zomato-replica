@@ -102,19 +102,13 @@ a {
       margin-left: 35px; }
     .game .widget .mash {
       display: flex; }
-      .game .widget .mash #search-del input {
-        width: 300px;
-        margin-left: 40px; }
-      .game .widget .mash .detect-btn {
-        border-radius: 2px; }
-  .game .order-btn input {
-    margin-left: 40px;
-    margin-top: 30px;
-    width: 380px;
-    color: white;
-    background-color: green;
-    border: green 1px solid;
-    border-radius: 5px; }
+      .game .widget .mash #ser-1 {
+        margin-left: 20px; }
+      .game .widget .mash #ser-2 .detect-btn {
+        border-radius: 2px;
+        padding-bottom: 3px; }
+  .game #ser-3 {
+    padding: 20px; }
   .game input {
     padding: 5px;
     font-size: 15px; }
